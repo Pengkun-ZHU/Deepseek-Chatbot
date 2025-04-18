@@ -40,3 +40,5 @@ def chat_with_deepseek():
             # Optionally remove the last user message if there was an error
             conversation_history.pop()
 
+# Start the chat
+chat_with_deepseek()
