@@ -8,7 +8,8 @@ deepseek = DeepSeekAPI(api_key)
 def chat_with_deepseek():
     print("Welcome to DeepSeek Chat! Type 'quit' to exit.")
     
-    # Initialize conversation history
+    # Initialize conversation history.
+    # @TODO: persist the chat history in disk.
     conversation_history = []
     
     while True:
@@ -18,7 +19,7 @@ def chat_with_deepseek():
             break
         
         # Add user message to history
-        conversation_history.append({"role": "user", "content": user_input})
+        conversation_history.append({"role": "user", "content": user_input}) 
         
         try:
             # Send the entire conversation history
